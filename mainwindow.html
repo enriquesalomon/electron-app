@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ShoppingList</title>
+    <script>
+        'use strict';
+        const gui = require('nw.gui');
+        const win = gui.Window.get();
+  
+        function toggleFullScreen () {
+          const button = document.getElementById('fullscreen');
+          if (win.isFullscreen) {
+            win.leaveFullscreen();
+            button.innerText = 'Go full screen';
+          } else {
+            win.enterFullscreen();
+            button.innerText = 'Exit full screen';
+          }
+        }
+  
+      </script>
+</head>
+<body>
+    <h1>Shopping List</h1>
+</body>
+</html>
